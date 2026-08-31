@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.pooriaarab.content-rabbit",
+  "name": "Content Rabbit",
+  "version": "1.0.0",
+  "author": "Content Rabbit",
+  "license": "MIT",
+  "description": "Open Content Rabbit from the Omarchy bar.",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Content Rabbit",
+    "category": "Productivity",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}
