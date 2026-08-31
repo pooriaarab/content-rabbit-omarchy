@@ -55,8 +55,12 @@ BarWidget {
     id: button
     anchors.fill: parent
     bar: root.bar
-    text: "CR"
-    tooltipText: "Open Content Rabbit"
+    text: panelLoader.item && panelLoader.item.draftCount > 0
+      ? "CR " + panelLoader.item.draftCount
+      : "CR"
+    tooltipText: panelLoader.item && panelLoader.item.draftCount > 0
+      ? "Open Content Rabbit capture (" + panelLoader.item.draftCount + " saved)"
+      : "Open Content Rabbit capture"
     onPressed: function(buttonCode) {
       if (buttonCode === Qt.LeftButton) root.toggle()
     }
