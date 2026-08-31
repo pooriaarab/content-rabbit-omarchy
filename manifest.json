@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "io.github.pooriaarab.content-rabbit",
   "name": "Content Rabbit",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Content Rabbit",
   "license": "MIT",
-  "description": "Open Content Rabbit from the Omarchy bar.",
+  "description": "Capture social post ideas from the Omarchy bar.",
   "kinds": ["bar-widget"],
   "entryPoints": {
     "barWidget": "BarWidget.qml"

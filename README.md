@@ -1,10 +1,10 @@
 # Content Rabbit for Omarchy
 
-Open Content Rabbit from the Omarchy Quattro bar.
+Capture social ideas from the Omarchy Quattro bar.
 
-The plugin opens `https://contentrabbitai.com` in your default browser. It does
-not read, store, or transmit API keys. Use the Content Rabbit website or MCP
-server for account actions.
+The panel captures text, pastes your focused clipboard, and saves local drafts.
+It copies a selected draft to the clipboard before opening Content Rabbit. It
+does not read, store, or transmit API keys.
 
 ## Install
 
@@ -18,7 +18,22 @@ Omarchy shell.
 
 ## Use
 
-Click `CR` in the bar. Select **Open Content Rabbit**.
+Click `CR` in the bar. Write an idea, then select **Copy and open**. The draft
+is copied to your clipboard for a deliberate paste into Content Rabbit.
+
+Use **Save locally** to keep an idea on this device. The bar shows the number
+of saved drafts. Local drafts are stored at
+`~/.local/state/omarchy/content-rabbit-drafts.json`.
+
+### Keyboard shortcut
+
+Add this Hyprland binding to open the panel from anywhere:
+
+```ini
+bind = SUPER SHIFT, R, exec, omarchy-shell shell toggle io.github.pooriaarab.content-rabbit '{}'
+```
+
+Inside the capture field, `Ctrl+Enter` copies the text and opens Content Rabbit.
 
 ## Remove
 
@@ -30,6 +45,7 @@ omarchy plugin remove io.github.pooriaarab.content-rabbit
 
 - Omarchy Quattro with its standard Quickshell runtime.
 - A default browser that can open HTTPS URLs.
+- The standard Omarchy state directory.
 
 ## License
 
